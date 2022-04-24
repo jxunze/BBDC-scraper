@@ -31,4 +31,5 @@ def send_available_dates(message):
 def all_other_messages(message):
     bot.send_message(message.chat.id, f"Welcome! I am a BBDC Driving Simulator Scraping bot.\nOnce you set your environment variables accordingly, enter /scrape and I will scrape the earliest dates for you.", parse_mode="MARKDOWN")
 
-bot.infinity_polling()
+if __name__ == "__main__":
+    bot.infinity_polling()
